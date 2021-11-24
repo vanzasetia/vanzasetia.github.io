@@ -12,6 +12,10 @@
       ga.l = +new Date();
       ga("create", "UA-284448242-Y", "auto");
       ga("send", "pageview");
+      // Alerts the tracking ID for the default tracker.
+      ga(function(tracker) {
+        alert(tracker.get('trackingId'));
+      });
     </script>
     <script
       async
